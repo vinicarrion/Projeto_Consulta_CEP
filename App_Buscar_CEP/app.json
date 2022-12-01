@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "App_Buscar_CEP",
+    "slug": "App_Buscar_CEP",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
