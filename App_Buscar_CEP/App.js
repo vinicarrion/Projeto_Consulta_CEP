@@ -51,10 +51,9 @@ const buscarCep = () => {
         <View style={styles.enderecoCard}>
           <Text >CEP: {endereco.cep}</Text>
           <Text>Logradouro {endereco.logradouro}</Text>
-          <Text>Logradouro: {endereco.logradouro}</Text>
           <Text>Complemento: {endereco.complemento}</Text>
           <Text>Bairro: {endereco.bairro}</Text>
-          <Text>Cidade: {endereco.bairro}</Text>
+          <Text>Cidade: {endereco.localidade}</Text>
           <Text>UF: {endereco.uf}</Text>
         </View>
         )}
@@ -73,8 +72,9 @@ const styles = StyleSheet.create({
   },
    
   enderecoCard: { 
-    marginVertical: 20, 
-    padding: 15, 
+    fontSize: 20,
+    marginVertical: 30, 
+    padding: 20, 
     backgroundColor: '#D5DBDB'
   },
 
@@ -88,8 +88,10 @@ const styles = StyleSheet.create({
     marginVertical: 20, 
     borderColor: 'gray', 
     borderWidth: 1, 
+    width: 100,
     borderRadius: 10, 
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   
   Titulo: {
